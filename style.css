@@ -26,3 +26,14 @@ body {
   border-color: #0056b3;
 }
 
+footer {
+text-align: center;
+padding: 10px;
+border-top: solid 1px #ccc;
+}
+
+h1{
+  text-align: center;
+padding: 10px;
+border-bottom: solid 1px #ccc;
+}
