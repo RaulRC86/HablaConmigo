@@ -1,7 +1,18 @@
 body {
   font-family: Arial, sans-serif;
   text-align: center;
-  padding: 20px;
+  min-height: 100vh;
+    margin: 0;
+    width: 100vw
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: auto;
 }
 .pictograma {
   width: 300px;
@@ -14,3 +25,4 @@ body {
 .pictograma:hover {
   border-color: #0056b3;
 }
+
