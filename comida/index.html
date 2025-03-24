@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HablaConmigo</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+  <h1>HablaConmigo</h1>
+  <a href="../index.html"><img src="/public/volver.png" class="pictograma"  alt="Volver"></a>
+  <img src="/comida/assets/img/fideos.jpeg" class="pictograma" onclick="hablar('Quiero fideos')" alt="Fideos">
+  <img src="/comida/assets/img/pan.png" class="pictograma" onclick="hablar('Quiero pan')" alt="Pan">
+  <img src="https://static.arasaac.org/pictograms/6525/6525_300.png" class="pictograma" onclick="hablar('Quiero galletas')" alt="Galletas">
+  <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
+</div>
+  <script>
+    function hablar(texto) {
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = "es-CL"; 
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>

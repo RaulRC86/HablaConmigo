@@ -1,25 +1,18 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HablaConmigo</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HablaConmigo</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     <div class="container">
-  <h1>HablaConmigo</h1>
-  <img src="/assets/img/fideos.jpeg" class="pictograma" onclick="hablar('Quiero fideos')" alt="Fideos">
-  <img src="/assets/img/pan.png" class="pictograma" onclick="hablar('Quiero pan')" alt="Pan">
-  <img src="https://static.arasaac.org/pictograms/6525/6525_300.png" class="pictograma" onclick="hablar('Quiero galletas')" alt="Galletas">
-  <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
-</div>
-  <script>
-    function hablar(texto) {
-      const utterance = new SpeechSynthesisUtterance(texto);
-      utterance.lang = "es-CL"; // Español chileno por defecto, si está disponible
-      window.speechSynthesis.speak(utterance);
-    }
-  </script>
+        <h1>HablaConmigo</h1>
+        <a href="./comida/index.html"><img src="/public/comida.png" class="pictograma"  alt="Comida"></a>
+        <a href="./emociones/index.html"><img src="/public/emociones.png" class="pictograma"  alt="Emociones"></a>
+        <a href="./viajes/index.html"><img src="/public/auto.jpeg" class="pictograma"  alt="Paseos"></a>
+        <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
+      </div>
 </body>
 </html>

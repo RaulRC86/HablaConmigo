@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HablaConmigo</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+  <h1>HablaConmigo</h1>
+  <a href="../index.html"><img src="/public/volver.png" class="pictograma"  alt="Volver"></a>
+  <img src="/emociones/assets/img/dolor_cabeza.png" class="pictograma" onclick="hablar('Me duele la cabeza')" alt="Dolor de cabeza">
+  <img src="/emociones/assets/img/dolor_diente.png" class="pictograma" onclick="hablar('Me duele un diente')" alt="Dolor de diente">
+  <img src="/emociones/assets/img/dolor_estomago.png" class="pictograma" onclick="hablar('Me duele el estómago')" alt="Dolor de estómago">
+  <img src="/emociones/assets/img/calor.png" class="pictograma" onclick="hablar('Tengo calor')" alt="Calor">
+  <img src="/emociones/assets/img/frio.png" class="pictograma" onclick="hablar('Tengo frío')" alt="Frío">
+  <img src="/emociones/assets/img/contento.png" class="pictograma" onclick="hablar('Estoy contento')" alt="Contento">
+  <img src="/emociones/assets/img/triste.png" class="pictograma" onclick="hablar('Estoy triste')" alt="Triste">
+  <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
+</div>
+  <script>
+    function hablar(texto) {
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = "es-CL"; 
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>

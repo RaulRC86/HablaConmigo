@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HablaConmigo</title>
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+  <h1>HablaConmigo</h1>
+  <a href="../index.html"><img src="/public/volver.png" class="pictograma"  alt="Volver"></a>
+  <img src="/viajes/assets/img/auto.jpeg" class="pictograma" onclick="hablar('Quiero salir en el auto')" alt="Auto">
+  <img src="/viajes/assets/img/Parque.png" class="pictograma" onclick="hablar('Quiero ir al parque')" alt="Parque">
+  <img src="/viajes/assets/img/perro.png" class="pictograma" onclick="hablar('Quiero sacar a pasear a la perra')" alt="Perro">
+  <img src="/viajes/assets/img/caminar.png" class="pictograma" onclick="hablar('Quiero salir a caminar')" alt="Caminar">
+  <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
+</div>
+  <script>
+    function hablar(texto) {
+      const utterance = new SpeechSynthesisUtterance(texto);
+      utterance.lang = "es-CL"; 
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
