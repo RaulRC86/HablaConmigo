@@ -1,18 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <title>HablaConmigo</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
     <div class="container">
         <h1>HablaConmigo</h1>
-        <a href="./comida/index.html"><img src="/public/comida.png" class="pictograma"  alt="Comida"></a>
-        <a href="./emociones/index.html"><img src="/public/emociones.png" class="pictograma"  alt="Emociones"></a>
-        <a href="./viajes/index.html"><img src="/public/auto.png" class="pictograma"  alt="Paseos"></a>
+        <a href="./comida/index.html"><img src="/public/comida.png" class="pictograma" alt="Comida"></a>
+        <a href="./emociones/index.html"><img src="/public/emociones.png" class="pictograma" alt="Emociones"></a>
+        <a href="./viajes/index.html"><img src="/public/auto.png" class="pictograma" alt="Paseos"></a>
         <footer>HablaConmigo es una aplicación 100% gratuita creada por Raúl Rodríguez Clavero, 2025, Chile.</footer>
-      </div>
+    </div>
+    <script>
+        // Registrar el Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('Service Worker registrado:', registration);
+                    })
+                    .catch(error => {
+                        console.error('Error al registrar el Service Worker:', error);
+                    });
+            });
+        }
+    </script>
 </body>
 </html>
