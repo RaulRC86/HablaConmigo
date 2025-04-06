@@ -11,6 +11,9 @@ self.addEventListener('install', (event) => {
           '/public/emociones.png',
           '/public/auto.png',
           '/public/logo.png',  
+          '/public/comida.png',
+          '/public/ayuda.png',
+          '/public/volver.png',
           '/emociones/index.html',
           '/emociones/calor.png',
           '/emociones/contento.png',
@@ -29,7 +32,13 @@ self.addEventListener('install', (event) => {
           '/viajes/auto.jpeg',
           '/viajes/caminar.png',
           '/viajes/parque.png',
-          '/viajes/perro.png'
+          '/viajes/perro.png',
+          '/ayuda/index.html',
+          '/ayuda/calcetines.png',
+          '/ayuda/hacer_Cama.png',
+          '/ayuda/ducha.png',
+          '/ayuda/polera.png',
+          '/ayuda/pantalón.png',
         ]);
       })
     );
