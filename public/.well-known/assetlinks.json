@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.netlify.hablaconmigoapp.twa",
+        "sha256_cert_fingerprints": ["FC:A3:A7:0E:F9:70:49:C0:4C:68:DA:DB:D2:5A:13:4B:1D:4B:56:A7:66:51:19:64:A3:E0:7A:61:6C:97:3E:A8"]
+      }
+    }]
